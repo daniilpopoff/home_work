@@ -1,3 +1,4 @@
+import math
 class Animal:
     def __init__(self, name, age, alive, area, food, vehicle ):
 
@@ -100,7 +101,46 @@ mean_man = Person(name= "ivan",age= 30, alive= True, area="Russia", food="fast f
 programmer  = Proger(name= " Евгений",age=20, alive= True, area="Russia", food="ПП", vehicle="машина и самолет  ", eating_milk=True,
                   car="lam", hobby="no hobby", work="", laptop="xaiomy")
 
-list_of_objects= [ej, mean_man, programmer]
+# list_of_objects= [ej, mean_man, programmer]
+#
+# for object in list_of_objects:
+#     print(object, object.moving())
 
-for object in list_of_objects:
-    print(object, object.moving())
+
+
+# 3 задание полиморфизм без наследования
+
+
+class Circle:
+    def __init__(self, r):
+        self.r = r
+
+    def get_sqare(self):
+        return math.pi*(self.r)**2
+
+
+
+
+class Sqare:
+    def __init__(self, a):
+        self.a = a
+    def get_sqare(self):
+        return self.a**2
+
+class Rectangle:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+    def get_sqare(self):
+        return self.a * self.b
+
+circle1 = Circle(12)
+sqare1 = Sqare(12)
+rectangle1 = Rectangle(12,6)
+
+list_of_figures = [circle1, sqare1, rectangle1]
+
+for figure in list_of_figures:
+    print(figure.get_sqare())
+
+
