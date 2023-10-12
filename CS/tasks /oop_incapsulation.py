@@ -80,5 +80,5 @@ animal_abstr = Animal(name="живое существо", age= 0, alive=False , 
 ej = Mammals(name = "ежик", age=2, alive=True, area="russia", food="яблоки", eating_milk=True)
 mean_man = Person(name= "ivan",age= 30, alive= True, area="Russia", food="fast food", eating_milk=True,
                   car="lada", hobby="no hobby", work="офис")
-mean_man = Person(name= " Евгений",age=20, alive= True, area="Russia", food="ПП", eating_milk=True,
-                  car="lam", hobby="no hobby", work="офис" )
+mean_man = Proger(name= " Евгений",age=20, alive= True, area="Russia", food="ПП", eating_milk=True,
+                  car="lam", hobby="no hobby", work="офис", laptop="xaiomy")
